@@ -10,9 +10,9 @@
 		C6B72B892B31369600A7EB33 /* SwiftUIMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B72B882B31369600A7EB33 /* SwiftUIMemoApp.swift */; };
 		C6B72B8B2B31369600A7EB33 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B72B8A2B31369600A7EB33 /* Persistence.swift */; };
 		C6B72B8E2B31369600A7EB33 /* SwiftUIMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C6B72B8C2B31369600A7EB33 /* SwiftUIMemo.xcdatamodeld */; };
-		C6B72B902B31369600A7EB33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B72B8F2B31369600A7EB33 /* ContentView.swift */; };
 		C6B72B922B31369700A7EB33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6B72B912B31369700A7EB33 /* Assets.xcassets */; };
 		C6B72B962B31369700A7EB33 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6B72B952B31369700A7EB33 /* Preview Assets.xcassets */; };
+		C6B72B9D2B3136F400A7EB33 /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B72B9C2B3136F400A7EB33 /* MainListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +20,10 @@
 		C6B72B882B31369600A7EB33 /* SwiftUIMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMemoApp.swift; sourceTree = "<group>"; };
 		C6B72B8A2B31369600A7EB33 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		C6B72B8D2B31369600A7EB33 /* SwiftUIMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUIMemo.xcdatamodel; sourceTree = "<group>"; };
-		C6B72B8F2B31369600A7EB33 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C6B72B912B31369700A7EB33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6B72B932B31369700A7EB33 /* SwiftUIMemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIMemo.entitlements; sourceTree = "<group>"; };
 		C6B72B952B31369700A7EB33 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C6B72B9C2B3136F400A7EB33 /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +56,12 @@
 		C6B72B872B31369600A7EB33 /* SwiftUIMemo */ = {
 			isa = PBXGroup;
 			children = (
+				C6B72B9F2B31370D00A7EB33 /* Memory */,
+				C6B72B9E2B31370300A7EB33 /* CoreData */,
 				C6B72B882B31369600A7EB33 /* SwiftUIMemoApp.swift */,
-				C6B72B8A2B31369600A7EB33 /* Persistence.swift */,
-				C6B72B8F2B31369600A7EB33 /* ContentView.swift */,
+				C6B72B9C2B3136F400A7EB33 /* MainListView.swift */,
 				C6B72B912B31369700A7EB33 /* Assets.xcassets */,
 				C6B72B932B31369700A7EB33 /* SwiftUIMemo.entitlements */,
-				C6B72B8C2B31369600A7EB33 /* SwiftUIMemo.xcdatamodeld */,
 				C6B72B942B31369700A7EB33 /* Preview Content */,
 			);
 			path = SwiftUIMemo;
@@ -73,6 +73,22 @@
 				C6B72B952B31369700A7EB33 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C6B72B9E2B31370300A7EB33 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C6B72B8A2B31369600A7EB33 /* Persistence.swift */,
+				C6B72B8C2B31369600A7EB33 /* SwiftUIMemo.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		C6B72B9F2B31370D00A7EB33 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Memory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6B72B8E2B31369600A7EB33 /* SwiftUIMemo.xcdatamodeld in Sources */,
+				C6B72B9D2B3136F400A7EB33 /* MainListView.swift in Sources */,
 				C6B72B892B31369600A7EB33 /* SwiftUIMemoApp.swift in Sources */,
-				C6B72B902B31369600A7EB33 /* ContentView.swift in Sources */,
 				C6B72B8B2B31369600A7EB33 /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,9 +306,9 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -300,10 +316,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ChamKKae-Doogie.SwiftUIMemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -328,9 +345,9 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -338,10 +355,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ChamKKae-Doogie.SwiftUIMemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
