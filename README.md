@@ -4,27 +4,6 @@
 1. SwiftUI를 이용한 메모 앱 구현
 2. CoreData를 이용한 CRUD구현
 
-
-
-## 미리보기
-1. Create
-https://github.com/doogie97/SwiftUIMemo/assets/82325822/4fcedba2-ff23-4dcf-8a77-db26d644d1c4
-
-2. Read
-https://github.com/doogie97/SwiftUIMemo/assets/82325822/f935bd3c-40f8-456e-a250-96b4ce9de873
-
-3. Update
-https://github.com/doogie97/SwiftUIMemo/assets/82325822/e767de92-8bdf-4f84-a494-037d700b522f
-
-4. Delete
-https://github.com/doogie97/SwiftUIMemo/assets/82325822/ccc9b036-48fd-4765-9192-50748f190ce6
-
-5. Search
-https://github.com/doogie97/SwiftUIMemo/assets/82325822/fda8e5f0-aa1f-463a-ab98-046547228326
-
-5. Sort
-https://github.com/doogie97/SwiftUIMemo/assets/82325822/4044db2f-df03-4878-a6ff-b716bae56491
-
 ## 구현하면서 느낀 점
 1. 코드가 너무 짧다...(대박)
 2. 데이터 바인딩이 무진장 쉽다(UIKit에서 MVVM을 구현 하든 어쩌든 그냥 그 어떤 아키텍쳐보다 쉽다고 생각이 듬)
@@ -37,3 +16,27 @@ https://github.com/doogie97/SwiftUIMemo/assets/82325822/4044db2f-df03-4878-a6ff-
 3. Sort할 때 animation 구현
 
 
+## 미리보기
+1. Create
+   
+https://github.com/doogie97/SwiftUIMemo/assets/82325822/4fcedba2-ff23-4dcf-8a77-db26d644d1c4
+
+3. Read
+
+https://github.com/doogie97/SwiftUIMemo/assets/82325822/f935bd3c-40f8-456e-a250-96b4ce9de873
+
+5. Update
+   
+https://github.com/doogie97/SwiftUIMemo/assets/82325822/e767de92-8bdf-4f84-a494-037d700b522f
+
+7. Delete
+   
+https://github.com/doogie97/SwiftUIMemo/assets/82325822/ccc9b036-48fd-4765-9192-50748f190ce6
+
+9. Search
+    
+https://github.com/doogie97/SwiftUIMemo/assets/82325822/fda8e5f0-aa1f-463a-ab98-046547228326
+
+5. Sort
+   
+https://github.com/doogie97/SwiftUIMemo/assets/82325822/4044db2f-df03-4878-a6ff-b716bae56491
