@@ -1,4 +1,4 @@
-### [KXCoding 강의](https://www.kxcoding.com/learning/mastering-swiftui)https://www.kxcoding.com/learning/mastering-swiftui 중 'Memo 앱 만들기' 강의 레포지토리
+### [KXCoding 강의](https://www.kxcoding.com/learning/mastering-swiftui) 중 'Memo 앱 만들기' 강의 레포지토리
 
 ## 구현 내용
 1. SwiftUI를 이용한 메모 앱 구현
