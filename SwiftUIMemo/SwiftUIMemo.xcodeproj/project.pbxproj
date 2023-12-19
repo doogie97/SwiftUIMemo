@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C671EABA2B3144B200B776FF /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C671EAB92B3144B200B776FF /* DetailView.swift */; };
 		C6B72B892B31369600A7EB33 /* SwiftUIMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B72B882B31369600A7EB33 /* SwiftUIMemoApp.swift */; };
 		C6B72B8B2B31369600A7EB33 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B72B8A2B31369600A7EB33 /* Persistence.swift */; };
 		C6B72B8E2B31369600A7EB33 /* SwiftUIMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C6B72B8C2B31369600A7EB33 /* SwiftUIMemo.xcdatamodeld */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C671EAB92B3144B200B776FF /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		C6B72B852B31369600A7EB33 /* SwiftUIMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B72B882B31369600A7EB33 /* SwiftUIMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMemoApp.swift; sourceTree = "<group>"; };
 		C6B72B8A2B31369600A7EB33 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				C6B72B9C2B3136F400A7EB33 /* MainListView.swift */,
 				C6B72BA82B313FE800A7EB33 /* MemoCell.swift */,
 				C6B72BAA2B31403800A7EB33 /* ComposeView.swift */,
+				C671EAB92B3144B200B776FF /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6B72BA92B313FE800A7EB33 /* MemoCell.swift in Sources */,
+				C671EABA2B3144B200B776FF /* DetailView.swift in Sources */,
 				C6B72B8E2B31369600A7EB33 /* SwiftUIMemo.xcdatamodeld in Sources */,
 				C6B72BA42B313BB100A7EB33 /* MemoStore.swift in Sources */,
 				C6B72B9D2B3136F400A7EB33 /* MainListView.swift in Sources */,
