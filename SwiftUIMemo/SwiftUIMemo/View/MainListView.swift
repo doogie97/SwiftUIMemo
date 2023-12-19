@@ -12,6 +12,9 @@ struct MainListView: View {
     
     @State private var showComposer: Bool = false
     
+    @FetchRequest(sortDescriptors: [SortDescriptor(\MemoEntity.insertDate, order: .reverse)])
+    var memoList: FetchedResults<MemoEntity>
+    
     var body: some View {
         NavigationView {
             List {

@@ -6,7 +6,6 @@
 //
 
 import CoreData
-import SwiftUI
 
 class CoredataManager: ObservableObject {
     static let shared = CoredataManager()
@@ -47,9 +46,6 @@ class CoredataManager: ObservableObject {
         
         saveContenxt()
     }
-    
-    @FetchRequest(sortDescriptors: [SortDescriptor(\MemoEntity.insertDate, order: .reverse)])
-    var memoList: FetchedResults<MemoEntity>
     
     func update(memo: MemoEntity?, content: String) {
         memo?.content = content
