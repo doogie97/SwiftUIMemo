@@ -16,7 +16,7 @@ struct MainListView: View {
     var memoList: FetchedResults<MemoEntity>
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
                 ForEach(store.list) { memo in
                     NavigationLink {

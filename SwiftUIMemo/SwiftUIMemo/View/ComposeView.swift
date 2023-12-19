@@ -17,7 +17,7 @@ struct ComposeView: View {
     @State private var content: String = ""
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 TextEditor(text: $content)
                     .padding()

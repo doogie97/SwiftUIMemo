@@ -76,8 +76,8 @@ struct DetailView: View {
 }
 
 #Preview {
-    NavigationView {
         DetailView(memo: Memo(content: "더미 메모 입니다"))
             .environmentObject(MemoStore())
+    NavigationStack {
     }
 }
