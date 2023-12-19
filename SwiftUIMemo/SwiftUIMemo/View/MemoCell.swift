@@ -9,14 +9,14 @@ import SwiftUI
 
 
 struct MemoCell: View {
-    @ObservedObject var memo: Memo
+    @ObservedObject var memo: MemoEntity
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(memo.content)
+            Text(memo.content ?? "")
                 .font(.body)
                 .lineLimit(1)
-            Text(memo.insertDate, style: .date)
+            Text(memo.insertDate ?? .now, style: .date)
                 .font(.caption)
                 .foregroundStyle(.secondary)
         }
@@ -25,5 +25,5 @@ struct MemoCell: View {
 
 
 #Preview {
-    MemoCell(memo: Memo(content: "더미 데이터 입니다"))
+    MemoCell(memo: MemoEntity(context: CoredataManager.shared.mainContext))
 }

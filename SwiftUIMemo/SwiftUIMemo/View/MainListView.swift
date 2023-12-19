@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainListView: View {
-    @EnvironmentObject var store: MemoStore
+    @EnvironmentObject var coredataManager: CoredataManager
     
     @State private var showComposer: Bool = false
     
@@ -18,14 +18,14 @@ struct MainListView: View {
     var body: some View {
         NavigationStack {
             List {
-                ForEach(store.list) { memo in
+                ForEach(memoList) { memo in
                     NavigationLink {
                         DetailView(memo: memo)
                     } label: {
                         MemoCell(memo: memo)
                     }
                 }
-                .onDelete(perform: { store.delete(set: $0) })
+                .onDelete(perform: { delete(set: $0) })
             }
             .listStyle(.plain)
             .navigationTitle("내 메모")
@@ -41,9 +41,16 @@ struct MainListView: View {
             }
         }
     }
+    
+    func delete(set: IndexSet) {
+        for index in set {
+            coredataManager.delete(memo: memoList[index])
+        }
+    }
 }
 
 #Preview {
     MainListView()
-        .environmentObject(MemoStore())
+        .environment(\.managedObjectContext, CoredataManager.shared.container.viewContext)
+        .environmentObject(CoredataManager.shared)
 }
