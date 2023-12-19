@@ -56,7 +56,7 @@
 		C6B72B872B31369600A7EB33 /* SwiftUIMemo */ = {
 			isa = PBXGroup;
 			children = (
-				C6B72B9F2B31370D00A7EB33 /* Memory */,
+				C6B72BA02B313B0600A7EB33 /* Memory */,
 				C6B72B9E2B31370300A7EB33 /* CoreData */,
 				C6B72B882B31369600A7EB33 /* SwiftUIMemoApp.swift */,
 				C6B72B9C2B3136F400A7EB33 /* MainListView.swift */,
@@ -84,7 +84,7 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
-		C6B72B9F2B31370D00A7EB33 /* Memory */ = {
+		C6B72BA02B313B0600A7EB33 /* Memory */ = {
 			isa = PBXGroup;
 			children = (
 			);
